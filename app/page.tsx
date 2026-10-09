@@ -181,9 +181,10 @@ export default function HomePage() {
               AI / ML · Software Engineering · Data · Human-Centered Design
             </p>
             <div className="hero-actions">
-              <a  className="animated-link" href="#projects">View My Work <ArrowRight size={18} /></a>
+              <a  className="btn primary" href="#projects">View My Work <ArrowRight size={18} /></a>
               <a className="btn secondary" href="#contact">Let&apos;s Connect <Mail size={17} /></a>
             </div>
+           
      
           <div className="hero-visual" aria-hidden="true">
             <div className="orbital orbital-one" />
