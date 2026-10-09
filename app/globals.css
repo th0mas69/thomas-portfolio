@@ -203,3 +203,92 @@ footer svg { color:#ec4899; }
   footer { margin:0 22px; flex-direction:column; gap:10px; }
   .stats { margin-top:20px; }
 }
+
+
+/* Animated gradient text */
+.animated-gradient {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #a5b4fc 25%,
+    #67e8f9 50%,
+    #c084fc 75%,
+    #ffffff 100%
+  );
+  background-size: 300% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-flow 6s ease-in-out infinite;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+/* Headings slide up smoothly */
+.font-reveal {
+  animation: font-reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes font-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Staggered text appearance */
+.font-reveal-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.font-reveal-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.font-reveal-delay-3 {
+  animation-delay: 0.45s;
+}
+
+/* Subtle hover animation for text links */
+.animated-link {
+  display: inline-block;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.animated-link:hover {
+  transform: translateY(-2px);
+  color: #a5b4fc;
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animated-gradient,
+  .font-reveal,
+  .font-reveal-delay-1,
+  .font-reveal-delay-2,
+  .font-reveal-delay-3 {
+    animation: none;
+  }
+
+  .animated-link {
+    transition: none;
+  }
+}
