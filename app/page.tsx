@@ -171,15 +171,20 @@ export default function HomePage() {
             <div className="eyebrow"><span /> AI · SOFTWARE · DATA · UX</div>
             <p className="hello">Hi, I&apos;m</p>
             <h1>Thomas <span> Luke. </span></h1>
-            <h2>I build intelligent products that solve <em>real problems.</em></h2>
-            <p className="hero-text">
+            <h2 className="font-reveal">
+            Building{" "}
+            <span className="animated-gradient">
+            intelligent digital experiences.
+            </span>
+            </h2>
+            <p className="font-reveal font-reveal-delay-1">
               AI / ML · Software Engineering · Data · Human-Centered Design
             </p>
             <div className="hero-actions">
               <a className="btn primary" href="#projects">View My Work <ArrowRight size={18} /></a>
               <a className="btn secondary" href="#contact">Let&apos;s Connect <Mail size={17} /></a>
             </div>
-            <a className="scroll-hint" href="#projects">
+            <a className="animated-link" href="#projects">
               <ArrowDownRight size={16} /> Scroll to explore
             </a>
           </div>
