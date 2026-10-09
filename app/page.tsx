@@ -184,6 +184,11 @@ export default function HomePage() {
               <a  className="btn primary" href="#projects">View My Work <ArrowRight size={18} /></a>
               <a className="btn secondary" href="#contact">Let&apos;s Connect <Mail size={17} /></a>
             </div>
+               </div>
+            <a className="scroll-hint" href="#projects">
+              <ArrowDownRight size={16} /> Scroll to explore
+            </a>
+          </div>
            
      
           <div className="hero-visual" aria-hidden="true">
